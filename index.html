@@ -3,41 +3,216 @@
 <head>
   <meta charset="utf-8">
   <title>Front End Developer</title>
-  <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.0/core.js"></script>
-  <script type="text/javascript" src="js/stickUp.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-  <script>
-      $(document).ready(function(){
-        //固定导航栏
-            $("#sticker").sticky({topSpacing:0});
-      });
-  </script>
-  
   <style>
     body {
       padding-top:45px;
+      background-color: grey;
     }
-    #test {
-      height:1500px;
-      background-color:green;
+    header {
+        margin: 0 auto;
+        width:80%;
+        padding: 100px 50px 50px;
+        background: #aaa;
+        color: #fff;
     }
+    .intro-text p {
+        font-size: 1.8em;
+    }
+hr {
+    background: none repeat scroll 0 0 #CCC;
+    border: thin none;
+    height: 5px;
+    width: 70%;
+}
+#about hr {
+    background: none repeat scroll 0 0 #CCC;
+    border: thin none;
+    height: 5px;
+    width: 100%;
+}
+    #portfolio {
+      margin: -20px auto 0;
+      height:800px;
+      width:80%;
+      background: white;
+    }
+    #portfolio h2 {
+        padding-top: 40px;
+    }
+    #portfolio ul {
+        list-style: none;
+    }
+    #portfolio ul li {
+        float: left;
+        margin: 15px;
+    }
+    #contact {  
+      margin: -20px auto 0;
+      height:800px;
+      width:80%;
+      background: white;
+      border-top: 1px solid #CCC;
+    }
+    footer{
+  color:#000;
+  background-color:#f8f8f8;
+  text-align:center;
+  box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+#footer-below {
+    font-size: 1.5em;
+}
+
+    
+  
+ 
+
   </style>
 </head>
 <body>
-<nav class="navbar navbar-fixed-top">
-  <div class="container">
-   <div class="navbar-header  pull-right" id="sticker">
-      <ul class="nav nav-pills">
-          <li class="active">
-              <a href="#">Home</a>
-          </li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">About</a></li>
-      </ul>
-   </div>
+<!-- START THE NAVBAR -->
+    <div class="navbar-wrapper">
+      <div class="container">
+      <div class="navwrapper">
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Chuanfeng</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav pull-right">
+                <li class="menuItem active"><a href="#about">ABOUT</a></li>
+                <li class="menuItem"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="menuItem"><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </div><!-- End Navbar -->
+      
+      </div>
+    </div> <!-- END NAVBAR -->
+            
+      <!-- 介绍-->
+<div id="about" class="menuItem">
+          <header>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-7">
+                        <div class="intro-text">
+                              <p class="lead">The name is Justin and I'm an UX/UI designdeveloper, with extensive practical experience in brand strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.</p>
+                              <hr>
+                              <p class="lead text-right">
+                                  <strong>Web Developer - Graphic Artist <br>- User Experience Designer</strong>
+                              </p>
+                        </div>
+                  </div>
+                  <div class="col-md-5 avatar">
+                      <img class="img-circle img-responsive" src="img/avatar.png" alt="">
+                  </div>
+                  </div>
+              </div>
+          </header>
+</div>
+      <!-- 介绍完毕-->
+
+<!--作品集开始-->
+<div id="portfolio" class="menuItem">
+    <h2 class="text-center">PORTFOLIO</h2>
+    <hr>
+    <ul class="grid">
+         <li>
+          <img src="img/avatar.png">
+        </li>
+         <li>
+          <img src="img/avatar.png">
+        </li>
+         <li>
+          <img src="img/avatar.png">
+        </li>
+        <li>
+          <img src="img/avatar.png">
+        </li>
+         <li>
+          <img src="img/avatar.png">
+        </li>
+         <li>
+          <img src="img/avatar.png">
+        </li>
+    </ul>
+</div>
+<!--作品集完毕-->
+
+<!--联系开始-->
+<div id="contact" class="menuItem">
+    <h2 class="text-center">CONTACT ME</h2>
+    <hr>
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+    <div class="col-sm-10">
+      <input type="name" class="form-control"  placeholder="Name">
+    </div>
   </div>
-</nav>
-<div id="test"></div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-10">
+     <input type="text" class="form-control" placeholder="Phone Number">
+    </div>
+  </div>
+
+  <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+
+  <div class="form-group">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</form>
+</div>
+<!--联系结束-->
+<footer>
+    <div id="footer-below">Chuanfeng © 
+        <script>document.write(new Date().getFullYear())</script>. All Rights Reversed
+      </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+              //initiating jQuery  
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //为 '.navbar-wrapper' class 启用stickUp插件
+                  $('.navbar-wrapper').stickUp({
+                                parts: {
+                                  0:'about',
+                                  1:'portfolio',
+                                  2: 'contact',
+                                },
+                                itemClass: 'menuItem',
+                                itemHover: 'active',
+                                topMargin: 'auto'
+                                /*
+                                    上面的数字标注的是元素出现的顺序。 
+                                    itemClass: 是每个导航菜单条目所对应的的class。
+                                    itemHover: 是当菜单条目处于激活状态时所被赋予的class，用于修改其外观。
+                                 */
+                              });
+                });
+              });
+            
+            </script>
 </body>
 </html>
