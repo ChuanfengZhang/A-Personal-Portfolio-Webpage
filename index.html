@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 
-  
+
   <style>
     body {
       padding-top:45px;
@@ -52,12 +52,18 @@ hr {
         float: left;
         margin: 15px;
     }
-    #contact {  
+    #contact {
       margin: -20px auto 0;
-      height:800px;
+      height:700px;
       width:80%;
       background: white;
       border-top: 1px solid #CCC;
+    }
+    .form-horizontal {
+      margin: 150px 35%;
+    }
+    .form-group {
+      width: 500px;
     }
     footer{
   color:#000;
@@ -69,9 +75,9 @@ hr {
     font-size: 1.5em;
 }
 
-    
-  
- 
+
+
+
 
   </style>
 </head>
@@ -98,12 +104,12 @@ hr {
               </ul>
             </div>
           </div>
-        </div> 
+        </div>
       </div><!-- End Navbar -->
-      
+
       </div>
     </div> <!-- END NAVBAR -->
-            
+
       <!-- 介绍-->
 <div id="about" class="menuItem">
           <header>
@@ -169,15 +175,18 @@ hr {
       <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
     </div>
   </div>
-  
+
   <div class="form-group">
     <div class="col-sm-10">
      <input type="text" class="form-control" placeholder="Phone Number">
     </div>
   </div>
 
-  <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-
+  <div class="form-group">
+    <div class="col-sm-12">
+      <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+    </div>
+  </div>
   <div class="form-group">
     <div class="col-sm-10">
       <button type="submit" class="btn btn-primary">Send</button>
@@ -187,13 +196,13 @@ hr {
 </div>
 <!--联系结束-->
 <footer>
-    <div id="footer-below">Chuanfeng © 
+    <div id="footer-below">Chuanfeng ©
         <script>document.write(new Date().getFullYear())</script>. All Rights Reversed
       </div>
 </footer>
 
 <script type="text/javascript">
-              //initiating jQuery  
+              //initiating jQuery
               jQuery(function($) {
                 $(document).ready( function() {
                   //为 '.navbar-wrapper' class 启用stickUp插件
@@ -207,14 +216,14 @@ hr {
                                 itemHover: 'active',
                                 topMargin: 'auto'
                                 /*
-                                    上面的数字标注的是元素出现的顺序。 
+                                    上面的数字标注的是元素出现的顺序。
                                     itemClass: 是每个导航菜单条目所对应的的class。
                                     itemHover: 是当菜单条目处于激活状态时所被赋予的class，用于修改其外观。
                                  */
                               });
                 });
               });
-            
+
             </script>
 </body>
 </html>
