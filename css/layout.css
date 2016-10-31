@@ -1,0 +1,82 @@
+body {
+    padding-top: 45px;
+    background-color: grey;
+}
+
+header {
+    margin: 0 auto;
+    width: 80%;
+    padding: 100px 50px 50px;
+    background: #aaa;
+    color: #fff;
+}
+
+.intro-text p {
+    font-size: 1.8em;
+}
+
+hr {
+    background: none repeat scroll 0 0 #CCC;
+    border: thin none;
+    height: 5px;
+    width: 70%;
+}
+
+#about hr {
+    background: none repeat scroll 0 0 #CCC;
+    border: thin none;
+    height: 5px;
+    width: 100%;
+}
+
+#portfolio {
+    margin: -20px auto 0;
+    height: 800px;
+    width: 80%;
+    background: white;
+}
+
+#portfolio h2 {
+    padding-top: 40px;
+}
+
+#portfolio ul {
+    list-style: none;
+}
+
+#portfolio ul li {
+    float: left;
+    margin: 15px;
+}
+
+#contact {
+    margin: -20px auto 0;
+    height: 800px;
+    width: 80%;
+    background: white;
+    border-top: 1px solid #CCC;
+}
+
+.contact-header {
+    margin-top: 80px;
+}
+
+.form-horizontal {
+    margin: 100px 30%;
+}
+
+.form-group {
+    width: 600px;
+    margin-top: 40px;
+}
+
+footer {
+    color: #000;
+    background-color: #f8f8f8;
+    text-align: center;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#footer-below {
+    font-size: 1.5em;
+}
